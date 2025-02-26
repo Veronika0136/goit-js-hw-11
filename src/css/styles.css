@@ -1,18 +1,102 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+body {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2e2f42;
+}
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+.form {
+  margin-top: 36px;
+  margin-left: 450px;
+  margin-bottom: 32px;
+  width: 371px;
+}
+
+input {
+  width: 270px;
+  height: 38px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding: 0px;
+}
+
+input:hover {
+  border: 1px solid #000000;
+}
+
+button {
+  color: #ffffff;
+  background-color: #4e75ff;
+  width: 91px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6c8cff;
+}
+
+.gallery {
+  padding-top: 32px;
+  margin-left: 156px;
+  margin-right: 156px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.gallery-item {
+  list-style: none;
+  margin: 0px;
+  width: 360px;
+  height: 200px;
+  border: 1px solid #808080;
+}
+
+.gallery-image {
+  display: block;
+  width: 360px;
+  height: 152px;
+}
+
+.gallery-wrapper {
+  width: 360px;
+  height: 48px;
+  padding: 0px;
+}
+
+.gallery-group {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 27px;
+  padding-left: 20px;
+  padding-right: 25px;
+}
+
+.gallery-subtitle {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2e2f42;
+  margin-top: 4px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.gallery-txt {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2e2f42;
+  margin-top: 0px;
+  margin-bottom: 4px;
+  text-align: center;
+}
