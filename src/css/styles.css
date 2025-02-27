@@ -8,7 +8,7 @@ body {
 
 .form {
   margin-top: 36px;
-  margin-left: 450px;
+  margin-left: 550px;
   margin-bottom: 32px;
   width: 371px;
 }
@@ -40,28 +40,28 @@ button:hover {
 }
 
 .gallery {
-  padding-top: 32px;
-  margin-left: 156px;
-  margin-right: 156px;
+  padding: 0px;
+  margin-left: 50px;
+  margin-right: 50px;
 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
+  gap: 15px;
 }
 
 .gallery-item {
   list-style: none;
   margin: 0px;
   width: 360px;
-  height: 200px;
+  height: 230px;
   border: 1px solid #808080;
 }
 
 .gallery-image {
   display: block;
   width: 360px;
-  height: 152px;
+  height: 182px;
 }
 
 .gallery-wrapper {
@@ -99,4 +99,24 @@ button:hover {
   margin-top: 0px;
   margin-bottom: 4px;
   text-align: center;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 100px;
+  height: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-mask:linear-gradient(90deg,#000 70%,#0000 0) 0/20%;
+  background:
+   linear-gradient(#000 0 0) 0/0% no-repeat
+   #ddd;
+  animation: l4 2s infinite steps(6);
+}
+@keyframes l4 {
+    100% {background-size:120%}
+}
+
+.hidden {
+  display: none;
 }
