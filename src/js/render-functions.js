@@ -1,15 +1,15 @@
 export function imageTemplate(item) {
-    const {
-      webformatURL,
-      largeImageURL,
-      tags,
-      likes,
-      views,
-      comments,
-      downloads,
-    } = item;
-  
-    return `<li class="gallery-item">
+  const {
+    webformatURL,
+    largeImageURL,
+    tags,
+    likes,
+    views,
+    comments,
+    downloads,
+  } = item;
+
+  return `<li class="gallery-item">
           <a class="gallery-link" href="${largeImageURL}" onclick="return false;">
             <img
               class="gallery-image"
@@ -38,11 +38,8 @@ export function imageTemplate(item) {
             </ul>
           </div>
         </li>`;
-  }
-  
-  export function imagesTemplate(arr) {
-    return arr.map(imageTemplate).join("");
-  }
+}
 
-
-  
+export function imagesTemplate(arr) {
+  return arr.map(imageTemplate).join('');
+}
