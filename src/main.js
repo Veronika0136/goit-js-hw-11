@@ -19,7 +19,7 @@ function searchImages(e) {
   e.preventDefault();
   showLoader();
   const massege = e.target.elements.search.value.trim();
-  
+  refs.gallery.innerHTML = '';
   getAllImages(massege)
     .then(arr => {
       if (arr.length === 0) {
@@ -33,7 +33,7 @@ function searchImages(e) {
           messageLineHeight: '24px',
           maxWidth: '432px',
         });
-        refs.gallery.innerHTML = '';
+       
       } else {
         const markup = imagesTemplate(arr);
         refs.gallery.innerHTML = markup;
@@ -58,7 +58,7 @@ function searchImages(e) {
       });
       console.log(error);
     })
-    .finally(hideLoader());
+    .finally(hideLoader);
 
   e.target.reset();
 }
